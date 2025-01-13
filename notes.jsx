@@ -1,0 +1,2 @@
+//onClick={addTask}: Passes the function directly, meaning React calls it when the event occurs.
+//onClick={() => addTask(task.id)}: Creates an anonymous function that React calls when the event occurs. This way, you can pass arguments.
