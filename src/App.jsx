@@ -1,4 +1,5 @@
 import './App.css'
+import Accordion from './components/Accordion/Accordion'
 import TaskManager from './components/asyncAwaitUsagesAPI/contactManagerApp'
 import CounterComponent from './components/counterComp/counterComponent'
 import FormValidations from './components/formValidator/formValidations'
@@ -13,7 +14,8 @@ function App() {
       {/* <TodoApp /> */}
       {/* <FormValidations /> */}
       {/* <TaskManager /> */}
-      <CounterComponent />
+      {/* <CounterComponent /> */}
+      <Accordion />
     </>
   )
 }
