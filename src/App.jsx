@@ -5,19 +5,21 @@ import CounterComponent from './components/counterComp/counterComponent'
 import FormValidations from './components/formValidator/formValidations'
 import Todo from './components/todo/todo'
 import TodoApp from './components/todoBasic/todoApp'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-
   return (
-    <>
-      {/* <Todo/> */}
-      {/* <TodoApp /> */}
-      {/* <FormValidations /> */}
-      {/* <TaskManager /> */}
-      {/* <CounterComponent /> */}
-      <Accordion />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Accordio />} />
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/todo-app" element={<TodoApp />} />
+        <Route path="/form-validations" element={<FormValidations />} />
+        <Route path="/task-manager" element={<TaskManager />} />
+        <Route path="/counter" element={<CounterComponent />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
