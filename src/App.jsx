@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Accordio />} />
+        <Route path="/" element={<Accordion />} />
         <Route path="/todo" element={<Todo />} />
         <Route path="/todo-app" element={<TodoApp />} />
         <Route path="/form-validations" element={<FormValidations />} />
